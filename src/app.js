@@ -75,7 +75,29 @@ let generateExcuse = () => {
   let actionIndex = Math.floor(Math.random() * action.length);
   let whatIndex = Math.floor(Math.random() * what.length);
   let whenIndex = Math.floor(Math.random() * when.length);
-  let imgIndex = whoIndex;
+  let imgIndex;
+
+  // Usar una estructura condicional para definir el índice de imagen basado en el índice de "who"
+  if (whoIndex === 0) {
+    imgIndex = 0; // Índice de imagen correspondiente a "The dog"
+  } else if (whoIndex === 1) {
+    imgIndex = 1; // Índice de imagen correspondiente a "My grandma"
+  } else if (whoIndex === 2) {
+    imgIndex = 2; // Índice de imagen correspondiente a "turtle"
+  } else if (whoIndex === 3) {
+    imgIndex = 3; // Índice de imagen correspondiente a "dinosaur"
+  } else if (whoIndex === 4) {
+    imgIndex = 4; // Índice de imagen correspondiente a "neighbors_cat"
+  } else if (whoIndex === 5) {
+    imgIndex = 5; // Índice de imagen correspondiente a "wind"
+  } else if (whoIndex === 6) {
+    imgIndex = 6; // Índice de imagen correspondiente a "computer"
+  } else if (whoIndex === 7) {
+    imgIndex = 7; // Índice de imagen correspondiente a "lavadoraRota"
+  } else if (whoIndex === 8) {
+    imgIndex = 8; // Índice de imagen correspondiente a "sneezing"
+  }
+
   let imgSource = img[imgIndex];
 
   return {
