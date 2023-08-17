@@ -18,15 +18,45 @@ let generateExcuse = () => {
     "His turtle",
     "My dinosaur",
     "The neighbors cat",
+    "The wind",
+    "The computer",
+    "The laundry machine",
+    "A sneezing panda"
   ];
-  let action = ["ate", "peed", "crushed", "broke", "burned", "painted"];
-  let what = ["my homework", "the keys", "the car"];
+  let action = [
+    "ate",
+    "peed",
+    "crushed",
+    "broke",
+    "burned",
+    "painted",
+    "sneezed",
+    "flooded",
+    "crashed",
+    "blew",
+    "tore up"
+  ];
+  let what = [
+    "my homework",
+    "the keys",
+    "the car",
+    "my assignment",
+    "my notes",
+    "my presentation",
+    "my textbook",
+    "my research paper"
+  ];
   let when = [
     "before the class",
     "right on time",
     "when I finished",
     "during my lunch",
     "while I was praying",
+    "right when I turned my back",
+    "just as I opened my backpack",
+    "moments before I was about to present",
+    "while I was grabbing my notebook",
+    "right after I printed it"
   ];
 
   let whoIndex = Math.floor(Math.random() * who.length);
