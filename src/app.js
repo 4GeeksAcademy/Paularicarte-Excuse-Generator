@@ -1,11 +1,12 @@
-/* eslint-disable */
+/* eslint-disable 
 import "./style.css";
-import "./assets/img/4geeks.ico";
+import "./assets/img/4geeks.ico";*/
 
 window.onload = () => {
   //write your code here
   document.querySelector("#btn").addEventListener("click", () => {
-    document.querySelector("#the-excuse", "").innerHTML = generateExcuse();
+    document.querySelector("#the-excuse").innerHTML = generateExcuse().excuse;
+    document.querySelector("#the-img").src = generateExcuse().imagen;
   });
 
   console.log("Hello Rigo from the console!");
@@ -74,16 +75,20 @@ let generateExcuse = () => {
   let actionIndex = Math.floor(Math.random() * action.length);
   let whatIndex = Math.floor(Math.random() * what.length);
   let whenIndex = Math.floor(Math.random() * when.length);
+  let imgIndex = whoIndex;
+  let imgSource = img[imgIndex];
 
-  return (
-    who[whoIndex] +
-    " " +
-    action[actionIndex] +
-    " " +
-    what[whatIndex] +
-    " " +
-    when[whenIndex] +
-    " " +
-    img[whoIndex]
-  );
+  return {
+    excuse:
+      who[whoIndex] +
+      " " +
+      action[actionIndex] +
+      " " +
+      what[whatIndex] +
+      " " +
+      imgSource +
+      " " +
+      when[whenIndex],
+    imagen: imgSource
+  };
 };
