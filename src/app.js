@@ -5,13 +5,24 @@ import "./assets/img/4geeks.ico";
 window.onload = () => {
   //write your code here
   document.querySelector("#btn").addEventListener("click", () => {
-    document.querySelector("#the-excuse").innerHTML = generateExcuse();
+    document.querySelector("#the-excuse", "").innerHTML = generateExcuse();
   });
 
   console.log("Hello Rigo from the console!");
 };
 
 let generateExcuse = () => {
+  let img = [
+    "src/assets/img/dog.jpg",
+    "src/assets/img/grandma.jpg",
+    "src/assets/img/turtle.jpg",
+    "src/assets/img/dinosaur.jpg",
+    "src/assets/img/neighbors_cat.jpg",
+    "src/assets/img/Wind.jpg",
+    "src/assets/img/computer.jpg",
+    "src/assets/img/lavadoraRota.jpg",
+    "src/assets/img/sneezingPanda.png"
+  ];
   let who = [
     "The dog",
     "My grandma",
@@ -71,6 +82,8 @@ let generateExcuse = () => {
     " " +
     what[whatIndex] +
     " " +
-    when[whenIndex]
+    when[whenIndex] +
+    " " +
+    img[whoIndex]
   );
 };
