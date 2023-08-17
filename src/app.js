@@ -1,6 +1,6 @@
-/* eslint-disable 
+/* eslint-disable */
 import "./style.css";
-import "./assets/img/4geeks.ico";*/
+import "./assets/img/4geeks.ico";
 
 window.onload = () => {
   //write your code here
@@ -85,8 +85,6 @@ let generateExcuse = () => {
       action[actionIndex] +
       " " +
       what[whatIndex] +
-      " " +
-      imgSource +
       " " +
       when[whenIndex],
     imagen: imgSource
