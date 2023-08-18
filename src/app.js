@@ -114,7 +114,8 @@ let generateExcuse = () => {
       " " +
       what[whatIndex] +
       " " +
-      when[whenIndex],
+      when[whenIndex] +
+      ".",
     imagen: imgSource
   };
 };
