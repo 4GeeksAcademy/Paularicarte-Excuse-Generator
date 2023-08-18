@@ -1,1 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+}
+#btn {
+  font-family: "Amatic SC", bold;
+  font-size: x-large;
+}
